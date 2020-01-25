@@ -81,7 +81,7 @@ class TestGemBundlerVersionFinder < Gem::TestCase
   def test_deleted_directory
     require "tmpdir"
 
-    Dir.mktmpdir do |dir|
+    Dir.mktmpdir("some_dir") do |dir|
       Dir.chdir(dir)
     end
 
